@@ -1,0 +1,20 @@
+body {
+    background-color: #97D8C4;
+}
+
+.navbar {
+    background-color: #6b9ac4;
+}
+
+.navbar-logo {
+    border-width: 50px;
+
+}
+
+.btn-registro {
+    color: blue;
+}
+
+.footer {
+    background-color: #6b9ac4;
+}
