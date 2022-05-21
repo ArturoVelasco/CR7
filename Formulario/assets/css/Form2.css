@@ -1,48 +1,52 @@
+@font-face {/*Fuenta personalizada*/
+  font-family: "miFuente";
+  src: url(/assets/louis_george_caf/Louis\ George\ Cafe\ Bold\ Italic.ttf);
+}
+
 
 body{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "miFuente";
   background: #4059ad;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #6b9ac4, #4059AD, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #6B9AC4, #4059AD, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to top, #6b9ac4, #4059AD, #0f0c29); /* //*Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6b9ac4, #4059ad);; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   /*HASTA AQUÍ EL CÓDIGO DE COLOR SE OBTUVO DE LA SIG PÁGINA:https://uigradients.com/#Forest */
-  display: flex;/*flex indica la capacidad de un elemento flexible para alterar sus dimensiones y llenar el espacio disponible. Mover el form*/
-  justify-content:center;
+  /*display: flex;/*flex indica la capacidad de un elemento flexible para alterar sus dimensiones y llenar el espacio disponible. Mover el form*/
+  /*justify-content:right;*/
 }
+
 h1{
   text-align: center; /*Centra la palabra "contáctanos"*/
+  font-weight: 700;/* peso o grueso de la letra*/
 }
 
 form{/* estilo de la caja form*/
-  background: rgb(249, 252, 252);
   padding: 20px 20px 10px ;/* relleno requerido por todos los lados del contenido;  top, right, bottom, left.*/
   border-radius: 14px;/* Borde del form.*/
   width: 420px;
-  height: 650px;/* width and height modifican el tamaño de form*/
+  height: 600px;/* width and height modifican el tamaño de form*/
 /* Aqu+i modificamos en margen entre el form y la pantalla*/
   margin-block-start: 50px;
-  margin-block-end: 10px;
-
+  margin-block-end: 30px;
+  margin-left: 450px;
+  background: #fff;
+  box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  
 }
 
+
 .Formulario{ /* nombre completo, correo, mensaje, télefono*/
- margin-top: 10px;
+  margin-top: 15px;
   margin: 15px;
   color: #4059ad;
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:"miFuente";
   font-size: 13px;
 
   }
 
-/*input{
-  background: none;
-  color: rgb(182, 33, 33);
-  font-size: 8px;
-  padding: 1555px 155px 1555px 5px;
-}*/
-
 
 .form-control{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "miFuente";
     background: #c6d2f8;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #f3d6f5, #45bedc);
@@ -66,16 +70,16 @@ form{/* estilo de la caja form*/
   border-radius: 10px;
   width: 300px;
   font-size: 11px;
+  justify-content:center;
 }
 
 .contacto{ /* Modificar parte de email, telefono has recibir novedades*/
 
-  
   border-radius: 3em;
   padding: 3.5em 1.5em;
   margin:auto;
   font-size: 11px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family:"miFuente";
 }
 p{
   font-size: 16px;
@@ -92,5 +96,28 @@ p{
 
 }
 
+nav{ /*Personal pet fuente*/
+  list-style: none;
+  font-family:'miFuente';
+  color: #dbdfec;
+}
+nav ul li { /*botones de la barra*/
+    display: inline-block;
+    padding: 3px;
+    position: relative;
+    display: block;
+    width: 100%;
+  
+}
 
+@media screen and (max-width:500px){
+  form{
+      width: 80%;
+  }
+}
 
+@media screen and (max-width: 980px){
+  form{
+      width: auto;
+  }
+}
