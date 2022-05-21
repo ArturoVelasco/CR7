@@ -1,20 +1,78 @@
-body {
-    background-color: #97D8C4;
+:root {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #4059ad;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #6b9ac4, #4059AD, #0f0c29);
+    /* //*Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6b9ac4, #4059ad);
+
 }
 
 .navbar {
-    background-color: #6b9ac4;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #4059ad;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #6b9ac4, #4059AD, #0f0c29);
+    /* //*Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6b9ac4, #4059ad);
 }
 
 .navbar-logo {
-    border-width: 50px;
+    width: 150px;
+    height: 5rem;
 
+}
+
+.links-navbar {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.links-navbar:hover {
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.links-navbar:active {
+    transform: translateY(-1px);
 }
 
 .btn-registro {
-    color: blue;
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
 }
 
 .footer {
-    background-color: #6b9ac4;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #4059ad;
+    background: -webkit-linear-gradient(to top, #6b9ac4, #4059AD, #0f0c29);
+    background: linear-gradient(to right, #6b9ac4, #4059ad);
+}
+
+.d-block {
+    object-fit: 50%;
 }
