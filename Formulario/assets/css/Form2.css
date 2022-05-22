@@ -14,6 +14,12 @@ body{
   /*justify-content:right;*/
 }
 
+main{
+  display: flex;
+  margin-left: 500px;
+  margin-top: 70px;
+  margin-right: 200px;
+}
 h1{
   text-align: center; /*Centra la palabra "contáctanos"*/
   font-weight: 700;/* peso o grueso de la letra*/
@@ -25,9 +31,10 @@ form{/* estilo de la caja form*/
   width: 420px;
   height: 600px;/* width and height modifican el tamaño de form*/
 /* Aqu+i modificamos en margen entre el form y la pantalla*/
+  /*
   margin-block-start: 50px;
   margin-block-end: 30px;
-  margin-left: 450px;
+  margin-left: 450px;*/
   background: #fff;
   box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
   border-radius: 10px;
@@ -108,16 +115,4 @@ nav ul li { /*botones de la barra*/
     display: block;
     width: 100%;
   
-}
-
-@media screen and (max-width:500px){
-  form{
-      width: 80%;
-  }
-}
-
-@media screen and (max-width: 980px){
-  form{
-      width: auto;
-  }
 }
