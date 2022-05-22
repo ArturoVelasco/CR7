@@ -102,7 +102,7 @@ nav{ /*Personal pet fuente*/
   color: #dbdfec;
 }
 nav ul li { /*botones de la barra*/
-    display: inline-block;
+    display: inline-block; /*visualización interna y externa de un elemento.*/
     padding: 3px;
     position: relative;
     display: block;
