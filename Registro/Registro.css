@@ -1,0 +1,181 @@
+@font-face {/*Fuenta personalizada*/
+  font-family: "miFuente";
+  src: url(/assets/louis_george_caf/Louis\ George\ Cafe\ Bold\ Italic.ttf);
+}
+
+
+body{
+  font-family: "miFuente";
+  background: #4059ad;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #6b9ac4, #4059AD, #0f0c29); /* //*Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6b9ac4, #4059ad);; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /*HASTA AQUÍ EL CÓDIGO DE COLOR SE OBTUVO DE LA SIG PÁGINA:https://uigradients.com/#Forest */
+  /*display: flex;/*flex indica la capacidad de un elemento flexible para alterar sus dimensiones y llenar el espacio disponible. Mover el form*/
+  /*justify-content:right;*/
+}
+
+main{
+  display: flex;
+  margin-left: 500px;
+  margin-top: 70px;
+  margin-right: 200px;
+}
+h1{
+  text-align: center; /*Centra la palabra "contáctanos"*/
+  font-weight: 700;/* peso o grueso de la letra*/
+}
+
+.signupFrm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.form {
+  background-color: white;
+  width: 400px;
+  border-radius: 8px;
+  padding: 20px 40px;
+  box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+}
+
+.title {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #4059AD;
+    
+}
+
+.inputContainer {
+  position: relative;
+  height: 45px;
+  width: 90%;
+  margin-bottom: 17px;
+}
+
+
+/*.inputContainer1 {
+  position: relative;
+  height: 45px;
+  width: 100%;
+  margin-bottom: 17px;
+  border: 1px solid #DADCE0;
+}*/
+
+.inputContainer1 {
+  position: relative;
+  border: 1px solid #DADCE0;
+  border-radius: 7px;
+  font-size: 16px;
+  padding: 0 20px;
+  outline: none;
+  background: none;
+  height: 45px;
+  width: 100%;
+  margin-bottom: 17px;
+}
+
+.inputContainer2 {
+  position: relative;
+  border-radius: 7px;
+  font-size: 17px;
+  padding: 0 20px;
+  outline: none;
+  background: none;
+  height: 45px;
+  width: 100%;
+  margin-bottom: 17px;
+}
+
+.fecha {
+  position: relative;
+  border-radius: 7px;
+  font-size: 17px;
+  padding: 0 20px;
+  outline: none;
+  background: none;
+  height: 45px;
+  width: 32.8%;
+  margin-bottom: 17px;
+  border: 1px solid #DADCE0;
+}
+
+
+.input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #DADCE0;
+  border-radius: 7px;
+  font-size: 16px;
+  padding: 0 20px;
+  outline: none;
+  background: none;
+  z-index: 1;
+}
+
+
+.label {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 0 4px;
+  background-color: white;
+  color: #DADCE0;
+  font-size: 16px;
+  transition: 0.5s;
+  z-index: 0;
+}
+
+::placeholder {
+  color: transparent;
+}
+
+.submitBtn {
+  display: block;
+  margin-left: auto;
+  padding: 15px 30px;
+  border: none;
+  background-color: #4059AD;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 28px;
+  margin-bottom: 10px;
+}
+
+.submitBtn:hover {
+  background-color: #6B9AC4;
+  transform: translateY(-2px);
+}
+.input:focus + .label {
+  top: -7px;
+  left: 3px;
+  z-index: 10;
+  font-size: 14px;
+  font-weight: 600;
+  color: #4059AD;
+}
+
+.input:not(:placeholder-shown)+ .label {
+  top: -7px;
+  left: 3px;
+  z-index: 10;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.input:focus {
+  border: 2px solid #6B9AC4;
+}
+
+.color {
+    color: #DADCE0;
+}
