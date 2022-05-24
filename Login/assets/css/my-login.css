@@ -2,10 +2,27 @@ html,body {
 	height: 100%;
 }
 
+<<<<<<< HEAD
 body.my-login-page {
 	background-color: #eff2f1;
 	font-size: 14px;
 }
+=======
+body{
+	font-family: "miFuente";
+	background: #4059ad;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #6b9ac4, #4059AD, #0f0c29); /* //*Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #6b9ac4, #4059ad);; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	/*HASTA AQUÍ EL CÓDIGO DE COLOR SE OBTUVO DE LA SIG PÁGINA:https://uigradients.com/#Forest */
+	/*display: flex;/*flex indica la capacidad de un elemento flexible para alterar sus dimensiones y llenar el espacio disponible. Mover el form*/
+	/*justify-content:right;*/
+}
+/*body.my-login-page {
+	background-color: #eff2f1;
+	font-size: 14px;
+}
+*/
+>>>>>>> 168e119d7fe6e3f7f9556811a2263aa3b81e924e
 
 .my-login-page .brand {
 	width: 90px;
