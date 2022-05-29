@@ -1,0 +1,83 @@
+@font-face {/*Fuenta personalizada*/
+    font-family: "miFuente";
+    src: url(/louis_george_caf/Louis\ George\ Cafe\ Bold.ttf);
+  }
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body{background: #4059ad;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #6b9ac4, #4059AD, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #fbfcfd, #edeff1, #ffffff);
+    font-family: "miFuente";
+}
+
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+    text-align: center;
+    background-color: #6B9AC4;
+
+}
+/*Nombres*/
+.card-title {
+    margin-bottom: .5rem;
+    font-size: 22px;
+    font-weight: bolder;
+    
+} 
+
+/*Rol en el team*/
+h5{
+    font-size: 17px;
+    color: #ebeef3;
+    font-weight: bolder;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgb(253, 253, 253);
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.card-text{
+    color: #ebeef3;
+}
+
+/*.btn-primary {
+    color: #fff;
+    background-color: #0b121d;
+    border-color: #ebeef3;
+}
+*/
+.icono {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #080864;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+ /*hoja de estilo del agente de usuario
+h5 {
+    display: block;
+    font-size: 0.83em;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+   text-align: center;
+}*/
