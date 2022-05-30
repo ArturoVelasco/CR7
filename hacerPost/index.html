@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team</title>
+    <!-- BOOTSTRAP LINK-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+ 
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/style.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+</head>
+<body>
+    <!-- BARRA DE NAVEGACIÓN-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">  <!--Creamos una barra de Navegación Superior-->
+      
+        <a class="navbar-brand" href="#">
+        <img src="./images/LOGO.JPG" alt="" width="30" height="24" class="d-inline-block align-text-top">PersonalPet
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Botones en la NAVBAR-->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav"> 
+            <a class="nav-link active" href="/Cr7-Developer/Form/Form.html">Contactos<span class="sr-only">(current)</span></a>
+            <a class="nav-link active" href="/Cr7-Developer/SobreNosotros/sobreNosotros.html">SobreNosotros<span class="sr-only">(current)</span></a>
+            <!--Barra de busqueda-->
+            <div class="search-container" align="center"> 
+                <input type="search" class="user search" placeholder="Buscar">
+            </div>
+            <button class="search-icon">
+                <span>&#9906;</span>
+            </button>
+                    <div class="notifs" align="right">
+            <div class="dropdown">
+                <!-- BOTON NOTIFICACIÓN-->
+                <span id='dropbtn' class="bell dropbtn"><i class="fa dropbtn">&#xf0f3;</i></span><span class="num"></span>
+                <div id="myDropdown" class="dropdown-content">
+                  <div class="notifPrs">
+                    <p class="nopr">No tienes ninguna notificación</p>
+                  </div>  
+              
+                  <!--<a class="link" href="#"><img class="notifImg" src="" alt="notifImage"></a>-->
+                </div>
+              </div>
+        </div> 
+        </div>
+       </nav>
+
+
+
+    </div>
+  </div>
+      <!-- LEMUS Y SU DESCRIPCION-->  
+      <div class="row row-cols-1 row-cols-md-4">
+        <div class="col mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h4 class="card-title">USUARIO</h4>
+              <!-- SECCION FOTOS-->
+                <div class="profile">
+                    <div class="details"><img src="images/default.jpg" alt="profile picture" class="sidenav-cnt profile_image"> &nbsp; <h4 class="name">Pronombres</h4><h3 id="change">cambiar foto</h3></div>
+                    <input type="file" id="inChange" style="display: none;">                 
+                </div>
+            </section>
+              <h5>Mi mascota es un perro llamado "Junior"</h5>
+              <br>
+              <p class="card-text">Hobbies.</p>
+              <br>
+            <!-- BOTONES DE GUARDAR
+            <button id="save">Guardar</button>
+            <button id="reset">Resetear</button>
+            -->
+              <!--ICONOS/LINKS-->
+              <a href="https://github.com/Emilio741"><ion-icon name="logo-github" class="icono"></ion-icon></a>
+              <a href="https://www.linkedin.com/in/ricardo-emilio-lemus-morales-577762173/"><ion-icon name="logo-linkedin" class = "icono"></ion-icon></a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+ <!-- PUBLICACIÓN-->  
+ <div class="row row-cols-1 row-cols-md-4">
+    <div class="col mb-4">
+      </div>
+    </div>
+<!-- PUBLICACIÓN--> 
+    <div class="col mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h4 class="card-title">Haz una publicación</h4>
+          <textarea placeholder="¿Qué estas pensando?" id="area"></textarea>
+                <div class="extra"><button id="photo/video">Foto/Video</button><input type="file" id="up-btn" hidden='hidden' accept="image/*,.png,.jpg"></div>
+                    <button id="submit">Publicar</button>
+                        <div id="previewBox">
+                        <img id="img-preview" src="" alt="" width="111px">
+                        </div>
+                </div>
+        </div>
+      </div>
+    </div>
+     
+               
+              
+                <div id="posts"></div>
+                
+                <div id='modal'>
+                    <p class='close'>X</p>
+                    <img class='modalImage imgpost' src="">
+                    <div class='modalTitle'><h4>this is a modal</h4></div>
+                </div>
+                <!--    <div class="commentBox">
+                    <input type="text" placeholder="write your comment here">
+                </div>-->
+            </div>
+        </div>
+        
+
+
+<section class="main">
+    
+       </div>
+
+
+   
+</section>
+
+
+
+
+
+
+</body>
+<script src="js/home.js"></script>
+<script src="js/mobile.js"></script>
+<script src="js/toWord.js"></script>
+<script src="js/sidenav.js"></script>
+
+</html>
