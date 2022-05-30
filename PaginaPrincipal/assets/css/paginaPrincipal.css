@@ -1,14 +1,14 @@
 @font-face {/*Fuenta personalizada*/
     font-family: "miFuente";
-    src: url(/assets/louis_george_caf/Louis\ George\ Cafe\ Bold\ Italic.ttf);
+    src: url(/SobreNosotros/louis_george_caf/Louis\ George\ Cafe\ Bold.ttf);
 }
   
   
   body{
     font-family: "miFuente";
-    background: #4059ad;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #6b9ac4, #4059AD, #0f0c29); /* //*Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #6b9ac4, #4059ad);; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #e6ecf5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #e6ecf5 #e6ecf5, #0f0c29); /* //*Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #e6ecf5, #e6ecf5);; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     /*HASTA AQUÍ EL CÓDIGO DE COLOR SE OBTUVO DE LA SIG PÁGINA:https://uigradients.com/#Forest */
     /*display: flex;/*flex indica la capacidad de un elemento flexible para alterar sus dimensiones y llenar el espacio disponible. Mover el form*/
     /*justify-content:right;*/
@@ -53,8 +53,8 @@ nav ul li { /*botones de la barra*/
 }
 
 .links-navbar:hover {
-    background-color: #23c483;
-    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    background-color: #f4b942;
+    box-shadow: 0px 15px 20px rgba(227, 210, 23, 0.4);
     color: #fff;
     transform: translateY(-7px);
 }
@@ -98,4 +98,20 @@ nav ul li { /*botones de la barra*/
 
 .d-block {
     object-fit: 50%;
+}
+
+.container{
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+ 
+
+}
+.jumbotron{
+
+    background-color: #f4b942;
+    font-family: "miFuente";
+
+
+
 }
