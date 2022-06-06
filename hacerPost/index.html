@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title>Principal - Personal Pet</title>
+  <link rel="shortcut icon" href="/Registro/images/favicon.png" type="image/x-icon">
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="/PaginaprincipalRedSocial/assets/css/style.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <!-- Icons FontAwesome 4.7.0 -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+      type="text/css" />
+
+
+
+   <link rel="stylesheet" href="css/home.css">
+   <link rel="stylesheet" href="css/style2.css">
+
+  
+</head>
+<body>
+    <!--Comienza la NavBar-->
+    <div class="navbar">
+      <div class="navbar_menuicon" id="navicon">
+          <i class="fa fa-navicon"></i>
+      </div>
+      <div class="navbar_logo">
+          <img src="/PaginaprincipalRedSocial/assets/images/logo.png" alt="" />
+      </div>
+      <div class="navbar_page">
+          <span>PersonalPet</span>
+      </div>
+      <div class="navbar_search">
+          <form method="" action="/">
+              <input type="text" placeholder="Buscar Mascotas.." />
+              <button><i class="fa fa-search"></i></button>
+              <!-- BUTON DE BUSQUEDA-->
+              <button class="search-icon">
+                <span>&#9906;</span>
+              </button>
+          </form>
+      </div>
+      <div class="navbar_icons">
+          <ul>
+
+          </ul>
+      </div>
+    <!--Añadimos el modal para debajo del perfil-->
+    <div class="navbar_user" id="profilemodal" style="cursor:pointer">
+      <img src="/PaginaprincipalRedSocial/assets/images/user.jpg" alt="" />
+      
+      <span id="navbar_user_top">Maria mar<br>
+          <p>Usuario</p>
+      </span><i class="fa fa-angle-down"></i>
+  </div>
+</div>
+<div class="all">
+
+  <!--ESte es el div para ver el perfil del usuario resumido-->
+  <div class="rowfixed"></div>
+  <div class="left_row">
+      <div class="left_row_profile">
+          <img id="portada" src="/PaginaprincipalRedSocial/assets/images/portada.jpg" />
+          <div class="left_row_profile">
+              <!--FUNCION QUE CONECTA A JAVA PARA CAMBIAR FOTO DE PERFIL-->
+              <img id="profile_pic" src="/PaginaprincipalRedSocial/assets/images/user.jpg" 
+              alt="profile picture" class="sidenav-cnt profile_image" > &nbsp;<h3 id="change">cambiar foto</h3>
+              <input type="file" id="inChange" style="display: none;">
+              <!-- 
+              <div class="details"><img src="images/default.jpg" > &nbsp; 
+                  <h4 class="name">Pronombres</h4></div>
+              
+              -->
+              
+              <span>Maria mar<br>
+                  <p>420k Seguidores / 80 Siguiendo</p>
+              </span>
+          </div>
+      </div>
+      <div class="rowmenu">
+          <ul>
+              <li><a href="index.html" id="rowmenu-selected"><i class="fa fa-globe"></i>Principal</a></li>
+              <li><a href="#"><i class="fa fa-user"></i>Perfil</a></li>
+              <li><a href="#"><i class="fa fa-users"></i>Organiza una Cita</a></li>
+              <li><a href="#"><i class="fa fa-users"></i>Mascotas</a></li>
+              <ul>
+                  <li style="border:none"><a href="/Registro/registroMascota.html">Añadir Mascota</a></li>
+              </ul>
+          </ul>
+      </div>
+  </div>
+    <br>
+    <br>
+    <!-- BARRA DE NAVEGACIÓN-->
+    <!-- EJEMPLO DE ANTES PERO NO FUNCIONA PERO GUARDEN
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">  <!--Creamos una barra de Navegación Superior-->
+      
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Botones en la NAVBAR-->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav"> 
+            <!--Barra de busqueda-->
+            <div class="search-container" align="center"> 
+                <input type="search" class="user search" placeholder="Buscar">
+            </div>
+
+            <div class="notifs" align="right">
+              <div class="dropdown">
+                  <!-- BOTON NOTIFICACIÓN-->
+                  <span id='dropbtn' class="bell dropbtn"><i class="fa dropbtn">&#xf0f3;</i></span><span class="num"></span>
+                  <div id="myDropdown" class="dropdown-content">
+                    <div class="notifPrs">
+                      <p class="nopr">No tienes ninguna notificación</p>
+                    </div>  
+                
+                    <!--<a class="link" href="#"><img class="notifImg" src="" alt="notifImage"></a>-->
+                  </div>
+            </div>
+        </div> 
+        </div>
+       </nav>
+      -->
+      <!-- TERMIADO-->
+
+<br><br><br><br>
+
+<!-- PUBLICACIÓN--> 
+<div class="right_row">
+  <div class="row">
+    <div class="publish">
+      <!--TITULO-->
+      <div class="row_title">
+        <span><i class="fa fa-newspaper-o" aria-hidden="true"></i> Hola</span>
+
+          <div class="details"><img src="images/default.jpg" alt="profile picture" class="sidenav-cnt profile_image"> &nbsp; <h4 class="name"><!--AQUI VA PRONOMBRES--></h4><h3 id="change">cambiar foto</h3></div>
+          <input type="file" id="inChange" style="display: none;" style="resize: none;" id="area">                 
+
+      </div>
+        <form method="" action="/">
+          <div class="publish_textarea">
+            <img class="border-radius-image" src="/PaginaprincipalRedSocial/assets/images/user.jpg" alt="" />
+            
+            <textarea type="text" placeholder="¿Qué estas pensando?" style="resize: none;" id="area"></textarea>
+                             
+          </div>
+          <div class="extra"><button id="photo/video">Foto/Video</button><input type="file" id="up-btn" hidden='hidden' accept="image/*,.png,.jpg"></div>
+          <button id="submit">Publicar</button>
+              <div id="previewBox">
+              <img id="img-preview" src="" alt="" width="111px">
+              </div>
+          </div>
+          </form>
+      </div>
+    </div>
+  </div>   
+               
+              
+                <div id="posts"></div>
+                
+                <div id='modal'>
+                    <p class='close'>X</p>
+                    <img class='modalImage imgpost' src="">
+                    <div class='modalTitle'><h4>this is a modal</h4></div>
+                </div>
+                <!--    <div class="commentBox">
+                    <input type="text" placeholder="write your comment here">
+                </div>-->
+            </div>
+        </div>
+        
+<!--Aquí hacemos el front de la publicación-->
+<div class="right_row">
+  <div class="row">
+      <div class="publish">
+          <div class="row_title">
+              <span><i class="fa fa-newspaper-o" aria-hidden="true"></i> Hola</span>
+
+          </div>
+          <form method="" action="/">
+              <div class="publish_textarea">
+                  <img class="border-radius-image" src="/PaginaprincipalRedSocial/assets/images/user.jpg" alt="" />
+                  <textarea type="text" placeholder="¿Qué hay de nuevo, Maria?" style="resize: none;" id="area"></textarea>
+                      <!-- PUBLICACIONES Y EL JAVA SCRIPT-->
+              </div>
+              <div class="publish_icons">
+                  <ul>
+                      <li><i class="fa fa-camera"></i></li>
+                      <li><i class="fa fa-video-camera"></i></li>
+                      <li><i class="fa fa-map-marker" aria-hidden="true"></i></li>
+                  </ul>
+                  <a href="/hacerPost/index.html" class='button'>Publicar</a>
+              </div>
+          </form>
+      </div>
+  </div>
+
+<section class="main">
+    
+       </div>
+
+
+   
+</section>
+
+
+
+
+
+
+</body>
+<script src="js/home.js"></script>
+<script src="js/mobile.js"></script>
+<script src="js/toWord.js"></script>
+<script src="js/sidenav.js"></script>
+
+</html>
