@@ -9,7 +9,7 @@
 
 body{background: #4059ad;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to top, #6b9ac4, #4059AD, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #fbfcfd, #edeff1, #ffffff);
+    background: linear-gradient(to right, #fdfdfd, #f7f7f7);
     font-family: "miFuente";
 }
 
@@ -18,9 +18,13 @@ body{background: #4059ad;  /* fallback for old browsers */
     flex: 1 1 auto;
     padding: 1rem 1rem;
     text-align: center;
-    background-color: #6B9AC4;
+    background-color: #ffffff;
 
 }
+
+.icono:hover {
+    color: rgb(255, 221, 71);
+  }
 /*Nombres*/
 .card-title {
     margin-bottom: .5rem;
@@ -32,7 +36,7 @@ body{background: #4059ad;  /* fallback for old browsers */
 /*Rol en el team*/
 h5{
     font-size: 17px;
-    color: #ebeef3;
+    color: #25250c;
     font-weight: bolder;
 }
 
@@ -40,7 +44,6 @@ h5{
     position: relative;
     display: flex;
     flex-direction: column;
-    min-width: 0;
     word-wrap: break-word;
     background-color: rgb(253, 253, 253);
     background-clip: border-box;
@@ -49,35 +52,98 @@ h5{
 }
 
 .card-text{
-    color: #ebeef3;
+    color: #0b0e11;
 }
 
-/*.btn-primary {
-    color: #fff;
-    background-color: #0b121d;
-    border-color: #ebeef3;
+/*Sobre nosotros*/
+.container1{
+    background-color: #f4b942;
+    padding: 50px;
+    height: 130px;
 }
-*/
+
 .icono {
     width: 40px;
     height: 40px;
     display: inline-block;
     font-weight: 400;
     line-height: 1.5;
-    color: #080864;
+    color: #655bff;
     text-align: center;
     text-decoration: none;
     vertical-align: middle;
     cursor: pointer;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
- /*hoja de estilo del agente de usuario
-h5 {
-    display: block;
-    font-size: 0.83em;
-    margin-block-start: 1.67em;
-    margin-block-end: 1.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-   text-align: center;
-}*/
+
+/*hoja de estilo del agente de usuario/*
+
+
+nav{ /*Personal pet fuente*/
+
+nav ul li { /*botones de la barra*/
+      display: inline-block; /*visualización interna y externa de un elemento.*/
+      padding: 3px;
+      position: relative;
+      display: block;
+      width: 100%;
+    
+}
+
+.links-navbar {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.links-navbar:hover {
+    background-color: #f4b942;
+    box-shadow: 0px 15px 20px rgba(227, 210, 23, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.links-navbar:active {
+    transform: translateY(-1px);
+}
+
+.btn-registro {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+
+/* animaciones*/
+#tarjeta:hover {
+    background-color: #6b9ac4;
+    box-shadow: 0px 30px 30px rgba(15, 12, 167, 0.4);
+    color: rgb(70, 73, 255);
+    transform: translateY(-20px);
+    border-radius: 80px;
+}
+
+#tarjeta:active {
+    transform: translateY(-1px);
+    filter: blur(1px);
+}

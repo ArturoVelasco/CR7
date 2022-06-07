@@ -10,36 +10,38 @@
     <title>aboutUs</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">  <!--Creamos una barra de Navegación Superior-->
-      
-      <a class="navbar-brand" href="#">
-      <img src="/Cr7-Developer/ProyectoIntegrador/assets/images/persomalpetlogo2.png" alt="" width="30" height="24" class="d-inline-block align-text-top">PersonalPet
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+ <!--Inicia navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/PaginaPrincipal/paginaPrincipal.html"><img src="/PaginaPrincipal/assets/images/persomalpetlogo2.png" width="30" height="30" class="logo" alt=""> Personal Pet</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
       </button>
-      <!--Botones en la NAVBAR-->
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav"> 
-          <a class="nav-link active" href="/Cr7-Developer/Form/Form.html">Contactos<span class="sr-only">(current)</span></a>
-          <a class="nav-link active" href="/Cr7-Developer/SobreNosotros/sobreNosotros.html">SobreNosotros<span class="sr-only">(current)</span></a>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarNav" >
+        <ul class="navbar-nav container d-flex flex-md-row text-center justify-content-md-between align-items-center">
+          <a href="/SobreNosotros/sobreNosotros.html" class='text-decoration-none my-2 links-navbar'>Sobre Nosotros</a>
+          <a href="/Formulario/Form.html" class='text-decoration-none my-2 links-navbar'>Contactanos</a>
+          <a href="/Registro/Acceso.html" class='text-decoration-none my-2 links-navbar'>Iniciar Sesión</a>
+          <li class="nav-item active">
+          </li>
+        </ul>
       </div>
-     </nav>
-     <br>
-     <br>
+    </nav>
+  </div>
+  <br>
+  <!--termina navbar-->
      <!--Empieza "sobreNosototros"-->
-     <div class="container">
+     <div class="container1">
+       <br>
       <div class="row justify-content-center">
-          <div class="col-12">
+          <div class="col-11">
               <h1 align="center"><strong>Sobre nosotros</strong></h1>
-              
-    <br>
-    <br>
+            <br> 
+      </div>
+    
       <!-- LEMUS Y SU DESCRIPCION-->  
       <div class="row row-cols-1 row-cols-md-4">
         <div class="col mb-4">
-          <div class="card h-100">
+          <div class="card-h-100" id="tarjeta">
             <img src="/assets/images/Emilio.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h4 class="card-title">Ricardo Emilio Lemus Morales</h4>
@@ -55,7 +57,7 @@
         </div>
 <!-- MAR Y SU DESCRIPCION--> 
         <div class="col mb-4">
-          <div class="card h-100">
+          <div class="card h-100" id="tarjeta" >
             <img src="/assets/images/mar2-414x413.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h4 class="card-title">María Isabel Bautista Hernández</h4>
@@ -71,7 +73,7 @@
         </div>
 <!-- ARTURO Y SU DESCRIPCION--> 
         <div class="col mb-4">
-          <div class="card h-100">
+          <div class="card h-100" id="tarjeta">
             <img src="/assets/images/Arturo Velasco 1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h4 class="card-title">Ricardo Arturo Zavala Vela</h4>
@@ -86,7 +88,7 @@
           </div>
         </div>
         <div class="col mb-4">
-          <div class="card h-100">
+          <div class="card h-100" id="tarjeta">
             <img src="/assets/images/andres-briseno-696x696.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h4 class="card-title">Andrés Alejandro Briseño Cristerna </h4>
@@ -101,7 +103,7 @@
         </div>
 <!--Jonathan descripcion-->
         <div class="col mb-4">
-          <div class="card h-100">
+          <div class="card h-100" id="tarjeta">
             <img src="/assets/images/jonathan-alejando-506x504.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h4 class="card-title">Jonathan Alejandro Nivon Lopez</h4>
@@ -116,7 +118,7 @@
         </div>
 <!--Erick descripcion-->
         <div class="col mb-4">
-          <div class="card h-100">
+          <div class="card h-100" id="tarjeta">
             <img src="/assets/images/erick.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h4 class="card-title">Erick Ruben Maldonado Arizaga </h4>
@@ -126,13 +128,13 @@
               
                   <!--ICONOS/LINKS-->
                   <a href="https://github.com/Gadocken"><ion-icon name="logo-github" class="icono"></ion-icon></a>
-                  <a href="https://www.linkedin.com/in/maria-isabel-bautista-hernandez/"><ion-icon name="logo-linkedin" class = "icono"></ion-icon></a>
+                  <a href="https://www.linkedin.com/in/erick-rubén-maldonado-arizaga-389287239/"><ion-icon name="logo-linkedin" class = "icono"></ion-icon></a>
             </div>
           </div>
         </div>
 <!-- LUIS Y SU DESCRIPCION-->
         <div class="col mb-4">
-          <div class="card h-100">
+          <div class="card h-100" id="tarjeta">
             <img src="/assets/images/LUISjpg.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h4 class="card-title">Luis Angel Gaytan Mendoza</h4>
@@ -147,7 +149,7 @@
         </div>
 <!-- Orlando Y SU DESCRIPCION-->
         <div class="col mb-4">
-          <div class="card h-100">
+          <div class="card h-100" id="tarjeta">
             <img src="/assets/images/Orlando.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h4 class="card-title">Luis Orlando Sorto Gómez</h4>
