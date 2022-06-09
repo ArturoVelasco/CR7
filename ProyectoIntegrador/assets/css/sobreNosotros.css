@@ -1,0 +1,152 @@
+@font-face {/*Fuenta personalizada*/
+    font-family: "miFuente";
+    src: url(/louis_george_caf/Louis\ George\ Cafe\ Bold.ttf);
+  }
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body{
+    background: #e6ecf5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #e6ecf5 #e6ecf5, #0f0c29); /* //*Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #e6ecf5, #e6ecf5);; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /*HASTA AQUÍ EL CÓDIGO DE COLOR SE OBTUVO DE LA SIG PÁGINA:https://uigradients.com/#Forest */
+    /*display: flex;/*flex indica la capacidad de un elemento flexible para alterar sus dimensiones y llenar el espacio disponible. Mover el form*/
+    /*justify-content:right;*/
+}
+
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+    text-align: center;
+    background-color: #ffffff;
+
+}
+
+.icono:hover {
+    color: rgb(255, 221, 71);
+  }
+/*Nombres*/
+.card-title {
+    margin-bottom: .5rem;
+    font-size: 22px;
+    font-weight: bolder;
+    
+} 
+
+/*Rol en el team*/
+h5{
+    font-size: 17px;
+    color: #25250c;
+    font-weight: bolder;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    background-color: rgb(253, 253, 253);
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.card-text{
+    color: #0b0e11;
+}
+
+/*Sobre nosotros*/
+.container1{
+    background-color: #f4b942;
+    padding: 50px;
+    height: 130px;
+}
+
+.icono {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #655bff;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+/*hoja de estilo del agente de usuario/*
+
+
+nav{ /*Personal pet fuente*/
+
+nav ul li { /*botones de la barra*/
+      display: inline-block; /*visualización interna y externa de un elemento.*/
+      padding: 3px;
+      position: relative;
+      display: block;
+      width: 100%;
+    
+}
+
+.links-navbar {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.links-navbar:hover {
+    background-color: #f4b942;
+    box-shadow: 0px 15px 20px rgba(227, 210, 23, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.links-navbar:active {
+    transform: translateY(-1px);
+}
+
+.btn-registro {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+
+/* animaciones*/
+#tarjeta:hover {
+    background-color: #6b9ac4;
+    box-shadow: 0px 30px 30px rgba(15, 12, 167, 0.4);
+    color: rgb(70, 73, 255);
+    transform: translateY(-20px);
+    border-radius: 80px;
+}
+
+#tarjeta:active {
+    transform: translateY(-1px);
+    filter: blur(1px);
+}
