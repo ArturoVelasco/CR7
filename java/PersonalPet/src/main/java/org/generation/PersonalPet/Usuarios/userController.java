@@ -1,5 +1,4 @@
 package org.generation.PersonalPet.Usuarios;
-
 import java.util.List;
 
 
@@ -24,7 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 	
 	public class userController{
-		//variable de tipo productoService llamada usService
+		//variable de tipo userervice llamada usService
 		private final userService usService;
 	
 @Autowired 
@@ -44,18 +43,18 @@ import org.springframework.web.bind.annotation.RestController;
 	@GetMapping (path="{userId}") //este es despues de la primer ejecucion sin id
 	public usuarios getUsuario(@PathVariable("userId")Long userId){
 		return usService.getUsuarios(userId);
-	}//getProductos
+	}//getUsuarios
 	
 	
 	
-	//metodo POST para crear nuevos productos
+	//metodo POST para crear nuevos usuarios
 	@PostMapping
 	public void addUsuarios(@RequestBody usuarios user) {
 		usService.addUsuarios(user);
 	}//addProducto
 		 
 	
-	//metodo PUT para modificar un producto ya existente
+	//metodo PUT para modificar un usuarioya existente
 	@PutMapping (path="{userId}")
 	public void updateUsuario(@PathVariable("userId")Long userId,
 		@RequestParam (required = false) String name,
@@ -71,7 +70,7 @@ import org.springframework.web.bind.annotation.RestController;
 	
 	//metodo para BORRAR un producto ya existente
 	@DeleteMapping(path="{userId}")
-	public void deleteProducto(@PathVariable("userId")Long userId) {
+	public void deleteUsuarioo(@PathVariable("userId")Long userId) {
 			userService userService = new userService();
 			userService.deleteUsuario(userId);
 	}

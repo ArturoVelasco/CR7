@@ -3,6 +3,12 @@ import java.util.ArrayList;
 
 import org.generation.PersonalPet.Usuarios.userService;
 
+import org.springframework.stereotype.Service;
+
+
+@Service
+
+
 //metodo para traer todos los productos
 public class userService {
 	public ArrayList<usuarios> getUsuarios(){
