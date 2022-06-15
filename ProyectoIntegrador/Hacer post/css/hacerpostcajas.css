@@ -1,5 +1,6 @@
-
+body {  background-color: #efefef; }
 .search {
+    
     padding: 2px;
     visibility: visible;
     border-radius: 10px;
@@ -9,21 +10,43 @@
     outline: none;
     transition: all .5s;
     }
-    
-    .search:hover {
-        box-shadow: 0 0 5px #fff,
-        0 0 10px #fff,
-        0 0 15px #fff;
-    }
+    /*busqueda*/
+
     
     #sign-up label {
         font-weight: bold;
     }
 
+/*parte arriba*/
 .search-container {
+    background-color: white;
     display: flex;
     min-width: 24%;
 }
+/* como hacer botones  bonitos
+.links-navbar {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.links-navbar:hover {
+    background-color: #f4b942;
+    box-shadow: 0px 15px 20px rgba(227, 210, 23, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+*/
 .search-icon{
     height: 23px;
     width: 23px;
@@ -58,7 +81,7 @@
     /* left: 12px; */
     position: relative;
 }
-
+/*navegacion izquierda */
 .left-nav {
     background-color: #d3d3d3;
     float:left;
@@ -74,19 +97,32 @@
     flex-wrap: wrap;
 }
 .profile h4 {position: absolute;margin: 0px 50px;font-size: small;}
-
+/*FONDO COMENTARIOS */
 .main {
-    background-color: white;
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+
+    cursor: pointer;
+    outline: none;
+    background-color: #f4b942;
     /* display: flex; */
     /* min-width: 38%; */
     /* height: 185px; */
     /* flex: 1; */
-    width: 100%;
+    width: 80%;
     float: left;
 }
-
+/*CAJA DE COMENTARIOS FONDO POSTS*/
 .post-container {
+    
     margin: 20px 1px 25px 11px;
+    background-color: #f4b942;
 }
 
 .postinput {
@@ -111,19 +147,17 @@
     height: 175px;
     width: 28%;
 }
-
+/*fotos*/
 .details {
+    
     display: flex;
+    border-radius: 45px;
     margin: 30px 15px;
     align-items: center;
 }
-
+/*CREAR PUBLICACION ES EL H4*/
 .post-container > h4{
-    margin: 0px 11px 0px -7px;
-    background-color: whitesmoke;
-    height: 23px;
-    width: 100%;
-    border: solid 1px;
+    
 }
 
 
@@ -141,7 +175,7 @@
 .post-content .details{
     margin: 16px 24px;
 }
-
+/*FONDO PRINICPAL*/
 .clones {
     position: absolute;
     background-color: ghostwhite;
@@ -151,12 +185,11 @@
     width: 484px;
 }
 
+/* CONTENIDO MENSAJE PARA PUBLICAR */
 
+/*cuadro para poner un fondo pero no funciona o tiene utilidad*/
 .contents{
-    overflow: hidden;
-    /* margin: 15px; */
-    /* border-radius: 5px; */
-    border: 1.5px solid #ccc;
+
     }
     textarea{
     width: 100%;
@@ -184,20 +217,22 @@
     border-radius: 50%;
     position: absolute;
     }
+    /*foto de perfil*/
     .name{
     font-weight: bold;
     margin-left: 60px;
     }
     .post p{margin-top: 12px;/* left: 12px; */position: relative;word-break: break-word;/* line-height: 21px; */}
-
+    /*submit y el boton de publicar*/
     #submit{
     width: 77px;
     height: 32px;
     color: #fff;
-    font-size: 17px;
+    font-size: 13px;
+    border-radius: 45px;
     font-weight: 500;
     border: none;
-    background: darkcyan;
+    background: #4059AD;
     float: right;
     cursor: pointer;
     position: relative;
@@ -206,7 +241,7 @@
     }
 
     #submit:hover {
-        background-color: #3ea3a5;
+        background-color: #4059AD;
     }
 
 
@@ -216,36 +251,43 @@
 
     .extra {
         position: absolute;
+        
         margin: -2px 9px;
     }
+    /*boton de publicaciones ID AZUL #4059AD; es el color cuando le pasa mouse*/ 
+    /*FOTO VIDEO FOTO/VIDEO*/
     .extra button {
-        margin-right: 12px;
-        background-color: rgb(196, 209, 208);
+        color: #fff;
+        font-size: 13px;
+        background-color: #4059AD;
         border-radius: 22px;
         padding: 6px;
         cursor: pointer;
         z-index: 1;
-        font-size: 10px;
     }
 
+    /*es el color cuando le pasa mouse*/ 
     .extra button:hover {
-        background-color: #d3e2e2;
+        background-color: #515365;
     }
     .option {
         margin:4px 0;
     }
-
+    /*like y comentario*/
     .option button {
-        background-color: turquoise;
+        color: #fff;
+        font-size: 13px;
+        font-weight: 500;
+        background-color: #4059AD;
         margin-right: 17px;
         border-radius: 12px;
-        font-size: 14px;
         width: 59px;
         cursor: pointer;
     }
-
+    /*BUTON BUSCAR*/
     .option button:hover {
-        background-color: #18ffffa3;
+        
+        background-color: #4059AD;
         color: #908a86;
         box-shadow: 0px 3px 3px 0px black;
     }
@@ -295,9 +337,9 @@
 .commentArea:focus {
   border-color: cornflowerblue;
 }
-
+/*comentarios*/
 .commentContent{
-    background-color: darkcyan;
+    background-color: #4059AD;
     min-height: 63px;
     margin-top: 23px;
     border-radius: 34px;
@@ -347,10 +389,10 @@
     line-height: normal;
 }
 
-
+/*caja de comentarios*/
 #modal {
     position: absolute;
-    background-color: cadetblue;
+    background-color: #4059AD;
     width: 27pc;
     border: solid;
     z-index: 1;
@@ -514,10 +556,21 @@
     /* top: 31px; */
     color: crimson;
 }
-
+/*estas seguro?*/
 .pop {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+
+    cursor: pointer;
+    outline: none;
     position: absolute;
-    background-color: cadetblue;
+    background-color: #4059AD;
     height: 5pc;
     width: 15pc;
     justify-content: center;
@@ -583,7 +636,7 @@
     position: absolute;
     top: 30px;
     left: 65px;
-    color: #4bcbff;
+    color: #4059AD;
     font-size: 14px;
 }
 

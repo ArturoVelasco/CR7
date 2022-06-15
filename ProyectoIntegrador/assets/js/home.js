@@ -440,7 +440,7 @@ function selectElements(comments, modal) {
     remove.forEach((cls) => {
         switch (cls.parentElement.parentElement.offsetParent.className) {
             case "commentContent":
-                cls.innerText = "Borrar Comentario";
+                cls.innerText = "Delete comment";
                 break;
         }
     });
@@ -476,9 +476,8 @@ function selectElements(comments, modal) {
 
     when = document.querySelectorAll("span.when");
 
-    // AQUI ES CUANDO SE PUBLICA ALGO Y MARCA LA FECHA DE CUANDO SE HIZO
     when.forEach((elem) => {
-        elem.innerText = "Publicado el: " + date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
+        elem.innerText = "On: " + date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
     });
 
     tooltiptext = document.querySelectorAll("span.tooltiptext");
@@ -592,7 +591,8 @@ function checkAtt() {
 function createElems(param, e) {
    
     var post = "<div class='post'>";
-    post += "<img src='images/default.jpg' class='imgpf'>";
+    // AQUI SE CONSIGUE LA FOTO DE PERFIL
+    post += "<img src='/assets/images/Orlando.jpg' class='imgpf'>";
     
     post += "<span class='name'>"+name+"</span>";
     
@@ -601,10 +601,9 @@ function createElems(param, e) {
     post += "<span class='dot dropbtn'></span>";
     post += "<span class='dot dropbtn'></span>";
     post += "<div id='myDropdown' class='dropdown-content'>";
-    // PUBLICACIÓN
-    post += "<span class='remove'>Borrar publicación</span>";
+    post += "<span class='remove'>Borrar post</span>";
     post += "<br>";
-    post += "<span class='edit'>Editar publicación</span>";
+    post += "<span class='edit'>Editar post</span>";
     post += "</div>";
     post += "</div>";
     post += "<div class='tooltip'>";
@@ -612,9 +611,10 @@ function createElems(param, e) {
     post += "<span class='tooltiptext'></span>";
     post += "</div>";
     post += "<div class='pop'>";
-    // CONFIRMACION DE BORRAR
-    post += "<h4 class='confirm'>¿Estas seguro?</h4>";
+    // ESTAS SEGURO?
+    post += "<h4 class='confirm'>¿Estás seguro?</h4>";
     post += "<div class='confirmBtn'>";
+    // Sí
     post += "<button id='yes'>Sí</button>";
     post += "<button id='no'>No</button>";
     post += "</div>";
@@ -631,10 +631,8 @@ function createElems(param, e) {
     }
     post += "<hr>";
     var option = "<div class='option'>";
-    // este es el botón de likes
     option += "<button id='like' class='like'>Like</button>";
-    // este es el buton de comentar
-    option += "<button id='commentBtn'>Comentar</button>";
+    option += "<button id='commentBtn'>Comenta</button>";
     post += option;
     post += "</div>";
     var commentBox = "<div class='commentBox'>";
