@@ -1,4 +1,6 @@
-body {  background-color: #efefef; }
+.right_row {
+    background-color: white;
+}
 .search {
     
     padding: 2px;
