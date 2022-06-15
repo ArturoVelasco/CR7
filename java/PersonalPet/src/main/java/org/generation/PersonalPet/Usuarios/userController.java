@@ -49,8 +49,8 @@ import org.springframework.web.bind.annotation.RestController;
 	
 	//metodo POST para crear nuevos usuarios
 	@PostMapping
-	public void addUsuarios(@RequestBody usuarios user) {
-		usService.addUsuarios(user);
+	public void addUsuarios(@RequestBody usuarios us) {
+		usService.addUsuarios(us);
 	}//addProducto
 		 
 	
@@ -68,7 +68,7 @@ import org.springframework.web.bind.annotation.RestController;
 	}//updateProducto
 	
 	
-	//metodo para BORRAR un producto ya existente
+	//metodo para BORRAR un usuario ya existente
 	@DeleteMapping(path="{userId}")
 	public void deleteUsuarioo(@PathVariable("userId")Long userId) {
 			userService userService = new userService();

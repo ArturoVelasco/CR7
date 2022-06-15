@@ -17,7 +17,7 @@ public class usuarios {
 	
 	
 	//Constructores
-	public usuarios(String name, String user_name, String email, String password, String gender, String country, String pet) {
+	 public usuarios(String name, String user_name, String email, String password, String gender, String country, String pet) {
 		super();
 		total ++;
 		this.userid = total;
@@ -39,12 +39,31 @@ public class usuarios {
 		}////constructor vacio para el metodo post
 		
 		
-		
-		
+	
 		
 	//Getters and Setters	
 	
 
+
+
+	public int getUserid() {
+			return userid;
+		}
+
+
+		public void setUserid(int userid) {
+			this.userid = userid;
+		}
+
+
+		public static int getTotal() {
+			return total;
+		}
+
+
+		public static void setTotal(int total) {
+			usuarios.total = total;
+		}
 
 
 	public String getName() {
@@ -117,13 +136,13 @@ public class usuarios {
 		this.country = country;
 	}
 	
-	public String getpet() {
+	public String getPet() {
 		return pet;
 	}
 
 
 
-	public void setpet(String pet) {
+	public void setPet(String pet) {
 		this.pet = pet;
 	}
 
