@@ -8,18 +8,47 @@ public class mascotas {
 		private Double pet_age; 
 		private String pet_gender;
 
+		private int maId;
+		private static int total = 0;
+	
 		
 		//Constructores para las Mascotas
 		public mascotas(String pet_name, String pet_race, String pet_species, String pet_color, Double pet_age,
 				String pet_gender) {
 			super();
+			total ++;
+			this.maId = total;
 			this.pet_name = pet_name;
 			this.pet_race = pet_race;
 			this.pet_species = pet_species;
 			this.pet_color = pet_color;
 			this.pet_age = pet_age;
 			this.pet_gender = pet_gender;
+			}
+		
+		//contructor vacio 
+			
+				////constructor vacio para el metodo post
+					
+			public mascotas() {
+			super();
+			total ++;
+			this.maId = total;
 		}
+
+			public int getMaId() {
+					return maId;
+				}
+			
+			
+			public void setMaId(int maId) {
+				this.maId = maId;
+			}
+
+			public int maId() {
+				// TODO Auto-generated method stub
+				return maId;
+			}
 		
 		//Getters and Setters
 
@@ -90,7 +119,17 @@ public class mascotas {
 					+ ", pet_color=" + pet_color + ", pet_age=" + pet_age + ", pet_gender=" + pet_gender + "]";
 		}
 		
+		public Long getId() {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+	
+
+
 		
 		//
 
 }
+
+
