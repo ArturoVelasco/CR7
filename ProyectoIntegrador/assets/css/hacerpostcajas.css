@@ -21,7 +21,7 @@
 
 /*parte arriba*/
 .search-container {
-    background-color: white;
+    background-color: #EDF2F6;
     display: flex;
     min-width: 24%;
 }
@@ -85,7 +85,7 @@
 }
 /*navegacion izquierda */
 .left-nav {
-    background-color: #d3d3d3;
+    background-color: #EDF2F6;
     float:left;
     display:flex;
     max-width: %;
@@ -106,7 +106,7 @@
     text-transform: uppercase;
 
     color: #000;
-    background-color: #fff;
+
     border: none;
     border-radius: 45px;
 
@@ -291,7 +291,7 @@
         
         background-color: #4059AD;
         color: #908a86;
-        box-shadow: 0px 3px 3px 0px black;
+        box-shadow: 0px 3px 3px 0px #EDF2F6;
     }
     #previewBox {
         width: 111px;
@@ -428,7 +428,7 @@
     /* right: 10px; */
     border: solid black;
     cursor: pointer;
-    color: red;
+    color: #4059AD;
     font-size: 13px;
     font-weight: bold;
     bottom: 11px;
@@ -456,7 +456,7 @@
 
 .num{
     right: 5px;
-    color: red;
+    color: #4059AD;
     cursor: pointer;
     font-size: 11px;
     position: absolute;
@@ -488,7 +488,7 @@
     background-color: #f1f1f1;
     min-width: 211px;
     overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px #EDF2F6;
     z-index: 1;
   }
 
@@ -497,7 +497,7 @@
 .show {display: block;}
 
 .nopr,.notifPr {
-    color: red;
+    color: #4059AD;
     font-size: 13px;
 }
 
@@ -548,15 +548,16 @@
     border-radius: 41%;
     display: inline-block;
 }
-
+/*LETRAS*/
 .menu .dropdown-content {
     right: -17px;
     min-width: 82px !important;
     font-size: 12px;
     text-align: center;
+    font-weight: bold;
     margin-inline-end: 17px;
     /* top: 31px; */
-    color: crimson;
+    color: #4059AD;
 }
 /*estas seguro?*/
 .pop {

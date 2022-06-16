@@ -8,16 +8,17 @@ display: none;
 .user {
 margin-top: 18px;
 }
+/*fondo */
 body{
 margin: 0;
 padding: 0;
-background-color: lightgrey;
+background-color: #EDF2F6;
 /* background: url(social-media.jpg); */
 background-size: cover;
 background-position: left;
 }
 .container{
-background-color: cadetblue;
+background-color: #EDF2F6;
 height: 79px;
 display: flex;
 align-content: center;
