@@ -84,14 +84,7 @@
     position: relative;
 }
 /*navegacion izquierda */
-.left-nav {
-    background-color: #EDF2F6;
-    float:left;
-    display:flex;
-    max-width: 100%;
-    /* position: fixed; */
-    /* margin-top: 79px; */
-}
+
 
 .profile {
     align-items: center;
@@ -122,7 +115,7 @@
 }
 /*CAJA DE COMENTARIOS FONDO POSTS*/
 .post-container {
-    
+    font-size: 12px;
     margin: 20px 1px 25px 11px;
     background-color: #f4b942;
 }
@@ -218,6 +211,8 @@
     .name{
     font-weight: bold;
     margin-left: 60px;
+    border: none;
+    border-radius: 45px;
     }
     .post p{margin-top: 12px;/* left: 12px; */position: relative;word-break: break-word;/* line-height: 21px; */}
     /*submit y el boton de publicar*/

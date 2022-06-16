@@ -601,6 +601,7 @@ function createElems(param, e) {
     post += "<span class='dot dropbtn'></span>";
     post += "<span class='dot dropbtn'></span>";
     post += "<div id='myDropdown' class='dropdown-content'>";
+    // ESTAS SEGURO? FUNCION BORRAR
     post += "<span class='remove'>Borrar post</span>";
     post += "<br>";
     post += "<span class='edit'>Editar post</span>";
@@ -611,7 +612,7 @@ function createElems(param, e) {
     post += "<span class='tooltiptext'></span>";
     post += "</div>";
     post += "<div class='pop'>";
-    // ESTAS SEGURO? FUNCCION ESTAS SEGURO PARA BORRAR
+    // ESTAS SEGURO? FUNCION ESTAS SEGURO PARA BORRAR
     post += "<h4 class='confirm'>¿Estás seguro?</h4>";
     post += "<div class='confirmBtn'>";
     // Sí
