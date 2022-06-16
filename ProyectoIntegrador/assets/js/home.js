@@ -591,7 +591,7 @@ function checkAtt() {
 function createElems(param, e) {
    
     var post = "<div class='post'>";
-    // AQUI SE CONSIGUE LA FOTO DE PERFIL
+    // AQUI SE CONSIGUE LA FOTO DE PERFIL FUNCION AQUI SE CONSIGUE 
     post += "<img src='/assets/images/Orlando.jpg' class='imgpf'>";
     
     post += "<span class='name'>"+name+"</span>";
@@ -611,11 +611,12 @@ function createElems(param, e) {
     post += "<span class='tooltiptext'></span>";
     post += "</div>";
     post += "<div class='pop'>";
-    // ESTAS SEGURO?
+    // ESTAS SEGURO? FUNCCION ESTAS SEGURO PARA BORRAR
     post += "<h4 class='confirm'>¿Estás seguro?</h4>";
     post += "<div class='confirmBtn'>";
     // Sí
     post += "<button id='yes'>Sí</button>";
+    // Respuesta NO
     post += "<button id='no'>No</button>";
     post += "</div>";
     post += "</div>";
@@ -635,8 +636,9 @@ function createElems(param, e) {
     option += "<button id='commentBtn'>Comenta</button>";
     post += option;
     post += "</div>";
+    // DECLARACION DE VARIABLE COMENTARIO FUNCION IMPORTANTE
     var commentBox = "<div class='commentBox'>";
-    commentBox += "<textarea id='cmt' class='commentArea' placeholder='write your comment here'></textarea>";
+    commentBox += "<textarea id='cmt' class='commentArea' placeholder='Escribe tu comentario'></textarea>";
     commentBox += "</div>";
     post += commentBox;
     var comments = "<section class='comments'>";

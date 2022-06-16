@@ -221,6 +221,16 @@
     }
     .post p{margin-top: 12px;/* left: 12px; */position: relative;word-break: break-word;/* line-height: 21px; */}
     /*submit y el boton de publicar*/
+    /*
+    color: #fff;
+        font-size: 13px;
+        font-weight: 500;
+        background-color: #4059AD;
+        margin-right: 17px;
+        border-radius: 12px;
+        width: 59px;
+        cursor: pointer;
+    */
     #submit{
     width: 77px;
     height: 32px;
@@ -254,13 +264,19 @@
     /*boton de publicaciones ID AZUL #4059AD; es el color cuando le pasa mouse*/ 
     /*FOTO VIDEO FOTO/VIDEO*/
     .extra button {
+        width: 77px;
+        height: 32px;
         color: #fff;
         font-size: 13px;
-        background-color: #4059AD;
-        border-radius: 22px;
-        padding: 6px;
+        border-radius: 45px;
+        font-weight: 500;
+        border: none;
+        background: #4059AD;
+        float: right;
         cursor: pointer;
-        z-index: 1;
+        position: relative;
+        right: 3px;
+        top: -2px;
     }
 
     /*es el color cuando le pasa mouse*/ 
@@ -272,14 +288,19 @@
     }
     /*like y comentario*/
     .option button {
+        
+        width: 77px;
+        height: 32px;
         color: #fff;
         font-size: 13px;
+        border-radius: 45px;
         font-weight: 500;
-        background-color: #4059AD;
-        margin-right: 17px;
-        border-radius: 12px;
-        width: 59px;
+        border: none;
+        background: #4059AD;
         cursor: pointer;
+        position: relative;
+        right: 3px;
+        top: -2px;
     }
     /*BUTON BUSCAR*/
     .option button:hover {
