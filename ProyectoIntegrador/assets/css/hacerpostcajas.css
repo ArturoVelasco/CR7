@@ -88,7 +88,7 @@
     background-color: #EDF2F6;
     float:left;
     display:flex;
-    max-width: %;
+    max-width: 100%;
     /* position: fixed; */
     /* margin-top: 79px; */
 }
@@ -158,9 +158,7 @@
     align-items: center;
 }
 /*CREAR PUBLICACION ES EL H4*/
-.post-container > h4{
-    
-}
+
 
 
 
@@ -189,10 +187,7 @@
 
 /* CONTENIDO MENSAJE PARA PUBLICAR */
 
-/*cuadro para poner un fondo pero no funciona o tiene utilidad*/
-.contents{
 
-    }
     textarea{
     width: 100%;
     height: 80px;
@@ -305,9 +300,7 @@
         /* font-weight: bold; */
     }
     
-#img-preview {
-    /* display: none; */
-}
+
 
 .imgpost {
     position: relative;
