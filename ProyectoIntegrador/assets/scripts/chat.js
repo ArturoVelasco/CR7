@@ -15,7 +15,7 @@ for (let i = 0; i < coll.length; i++) {
 
     });
 }
-
+// ESTA FUNCION TE PONE LA HORA
 function getTime() {
     let today = new Date();
     hours = today.getHours();
@@ -36,6 +36,7 @@ function getTime() {
 // Gets the first message
 // PRIMER MENSAJE
 function firstBotMessage() {
+    // 
     let firstMessage = "Escribe 'mascotas' para saber que puedes traer u 'horarios' y saber que hora pueden reunirse"
     document.getElementById("botStarterMessage").innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>';
 
@@ -62,7 +63,7 @@ function getResponse() {
     let userText = $("#textInput").val();
 
     if (userText == "") {
-        userText = "I love Code Palace!";
+        userText = "Amo a mis perrihijos y gathijos";
     }
 
     let userHtml = '<p class="userText"><span>' + userText + '</span></p>';
@@ -96,7 +97,7 @@ function sendButton() {
 }
 
 function heartButton() {
-    buttonSendText("Heart clicked!")
+    buttonSendText("¡ME ENCANTA!")
 }
 
 // Press enter to send a message
