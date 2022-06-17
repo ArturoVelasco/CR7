@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Configuración - Personal Pet</title>
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/styleRedSocial.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- Icons FontAwesome 4.7.0 -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar_menuicon" id="navicon">
+            <i class="fa fa-navicon"></i>
+        </div>
+        <div class="navbar_logo">
+            <img src="assets/images/persomalpetlogo2.png" alt="" />
+        </div>
+        <div class="navbar_page">
+            <span>Personal Pet</span>
+        </div>
+        <div class="navbar_search">
+            <form method="" action="/">
+                <input type="text" placeholder="Buscar Mascotas.." />
+                <button><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <div class="navbar_icons">
+            <ul>
+                <a href="" style="color:white"><li><i class="fa fa-globe"></i></li></a>
+            </ul>
+        </div>
+<!--Añadimos el modal para debajo del perfil-->
+        <div class="navbar_user" id="profilemodal" style="cursor:pointer">
+            <img src="assets/images/Orlando.jpg" alt="" />
+            
+            <span id="navbar_user_top">Orlando<br>
+                <p  >Usuario</p>
+            </span><i class="fa fa-angle-down"></i>
+        </div>
+    </div>
+
+    <div class="all">
+
+        <!--ESte es el div para ver el perfil del usuario resumido-->
+        <div class="rowfixed"></div>
+        <div class="left_row">
+            <div class="left_row_profile">
+                <img id="portada" src="assets/images/portada2.jpg" />
+                <div class="left_row_profile">
+                    <!--FUNCION QUE CONECTA A JAVA PARA CAMBIAR FOTO DE PERFIL-->
+                    <img id="profile_pic" src="assets/images/Orlando.jpg" 
+                    alt="profile picture" class="sidenav-cnt profile_image" > &nbsp;<h3 id="change"><i class="fa fa-user"></i></h3>
+                    <input type="file" id="inChange" style="display: none;">
+                    <span>Orlando<br>
+                        <p>420k Seguidores / 80 Siguiendo</p>
+                    </span>
+                </div>
+            </div>
+            <div class="rowmenu">
+                <ul>
+                    <li><a href="PrincipalRedSocial.html" id="rowmenu-selected"><i class="fa fa-globe"></i>Principal</a></li>
+                    <li><a href="perfil.html"><i class="fa fa-user"></i>Perfil</a></li>
+                    <li><a href="#"><i class="fa fa-users"></i>Mascotas Registradas</a></li>
+                    <div class="left_row_profile">
+                        <div class="left_row_profile">
+                            <!--FUNCION QUE CONECTA A JAVA PARA CAMBIAR FOTO DE PERFIL-->
+                            <img id="profile_pic" src="assets/images/user.jpg" 
+                            alt="profile picture" class="sidenav-cnt profile_image" >
+                            <span>Perro 1<br>
+                                <p>Le gusta perseguir la pelota</p>
+                            </span>
+                        </div>
+                    </div>
+                    <ul>
+                        <li style="border:none"><a href="crearMascota.html">Añadir Mascota</a></li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+
+
+
+        
+
+        <div class="right_row">
+
+            <div class="row border-radius">
+                <div class="settings shadow">
+                    <div class="settings_title">
+                        <h3>Configuraciones de la Cuenta</h3>
+                    </div>
+                    <div class="settings_content">
+                        <ul>
+                            <li>
+                                <p><b>Sonido de Notificaciones</b><br>Se reproducirá un sonido cada que llegue una notificación</p>
+                                <label class="switch"><input type="checkbox" class="primary"><span class="slider round"></span></label>
+                            </li>
+                            <li>
+                                <p><b>Notificaciones por e-mail</b><br>Te enviaremos un correo con tus notificaciones</p>
+                                <label class="switch"><input type="checkbox" class="primary" checked><span class="slider round"></span></label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="suggestions_row">
+            <div class="row shadow">
+                <div class="row_title">
+                    <span>Configuraciones de perfil</span>
+                </div>
+                <div class="menusetting_contain">
+                    <ul>
+                        <li>
+                            <a href="Personal-Information.html">Información personal</a>
+                        </li>
+                        <li>
+                            <a href="settings.html" id="settings-select">Configuración de la cuenta</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+
+
+
+    
+    <!-- Modal Profile -->
+    <div class="modal modal-profile">
+        <div class="modal-icon-select"><i class="fa fa-sort-asc" aria-hidden="true"></i></div>
+        <div class="modal-title">
+            <span>Tu Cuenta</span>
+            <a href="settings.html"><i class="fa fa-cogs"></i></a>
+        </div>
+        <div class="modal-content">
+            <ul>
+                <li>
+                    <a href="settings.html">
+                        <i class="tasks" aria-hidden="true"></i>
+                        <span><b>Configuración</b><br>Tu configuración de perfil</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="registroMascota.html">
+                        <i class="star-o" aria-hidden="true"></i>
+                        <span><b>Añadir Mascota</b><br>Añade tu mascota</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Index.html">
+                        <i class="power-off" aria-hidden="true"></i>
+                        <span><b>Cerrar sesión</b><br>Salir</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- NavMobile -->
+    <div class="mobilemenu">
+        
+        <div class="mobilemenu_profile">
+            <img id="mobilemenu_portada" src="images/portada.jpg" />
+            <div class="mobilemenu_profile">
+                <img id="mobilemenu_profile_pic" src="images/user.jpg" /><br>
+                <span>Jonh Hamstrong<br><p>150k followers / 50 follow</p></span>
+            </div>
+            <div class="mobilemenu_menu">
+                <ul>
+                    <li><a href="index.html"><i class="fa fa-globe"></i>Newsfeed</a></li>
+                    <li><a href="profile.html"><i class="fa fa-user"></i>Profile</a></li>
+                    <li><a href="friends.html"><i class="fa fa-users"></i>Friends</a></li>
+                    <li><a href="messages.html"><i class="fa fa-comments-o"></i>messages</a></li>
+                    <li class="primarymenu"><i class="fa fa-compass"></i>Explore</li>
+                    <ul class="mobilemenu_child">
+                        <li style="border:none"><a href="#"><i class="fa fa-globe"></i>Activity</a></li>
+                        <li style="border:none"><a href="#"><i class="fa fa-file"></i>Friends</a></li>
+                        <li style="border:none"><a href="#"><i class="fa fa-file"></i>Groups</a></li>
+                        <li style="border:none"><a href="#"><i class="fa fa-file"></i>Pages</a></li>
+                        <li style="border:none"><a href="#"><i class="fa fa-file"></i>Saves</a></li>
+                    </ul>
+                    <li class="primarymenu"><i class="fa fa-user"></i>Rapid Access</li>
+                    <ul class="mobilemenu_child">
+                        <li style="border:none"><a href="#"><i class="fa fa-star-o"></i>Your-Page.html</a></li>
+                        <li style="border:none"><a href="#"><i class="fa fa-star-o"></i>Your-Group.html</a></li>
+                    </ul>
+                </ul>
+                    <hr>
+                <ul>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">FAQ's</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="login.html">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    // Modals
+    $(document).ready(function(){
+
+
+        $("#messagesmodal").hover(function(){
+            $(".modal-comments").toggle();
+        });
+        $(".modal-comments").hover(function(){
+            $(".modal-comments").toggle();
+        });
+
+
+
+        $("#friendsmodal").hover(function(){
+            $(".modal-friends").toggle();
+        });
+        $(".modal-friends").hover(function(){
+            $(".modal-friends").toggle();
+        });
+
+
+        $("#profilemodal").hover(function(){
+            $(".modal-profile").toggle();
+        });
+        $(".modal-profile").hover(function(){
+            $(".modal-profile").toggle();
+        });
+
+
+        $("#navicon").click(function(){
+            $(".mobilemenu").fadeIn();
+        });
+        $(".all").click(function(){
+            $(".mobilemenu").fadeOut();
+        });
+    });
+    </script>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>

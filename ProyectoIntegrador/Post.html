@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacer publicaciones</title>
+ 
+    <link rel="stylesheet" href="/assets/css/hacerpostcajas.css">
+    <link rel="stylesheet" href="/assets/css/hacerpoststyle.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+</head>
+<body>
+       
+        <div class="notifs">
+            <div class="dropdown">
+                <span id='dropbtn' class="bell dropbtn"><i class="fa dropbtn">;</i></span><span class="num"></span>
+                <div id="myDropdown" class="dropdown-content">
+                  <div class="notifPrs">
+                    <p class="nopr">There are no notifications</p>
+                  </div>  
+              
+                  <!--<a class="link" href="#"><img class="notifImg" src="" alt="notifImage"></a>-->
+                </div>
+              </div>
+        </div> 
+        <div class="search-container"> 
+            
+        <button class="search-icon">
+            <span>&#9906;</span>
+        </button>
+        <!--<button type="submit"><i class="fa fa-search"></i></button>-->
+        </div>
+
+<section class="left-nav">
+    <div class="profile">
+        <div class="details"><img src="/assets/images/Orlando.jpg" alt="profile picture" class="sidenav-cnt profile_image"> &nbsp; <h4 class="name">Usuario</h4><h3 id="change">change profile</h3></div>
+        
+        </div>
+        
+
+   
+</section>
+
+<section class="main">
+    <div class="post-container">
+        <!--<input type="text" placeholder="What's on your mind?" id="postinput" class="postinput &#10;">-->
+        <h4><center>Crear una publicación</center></h4>
+        
+       
+       
+       <div class="post-content">
+         
+       
+       <div class="contents">
+        <textarea placeholder="¿Qué estás pensando?" id="area"></textarea>
+        <!-- buton para publicar-->
+        <div class="extra"><button id="photo/video">Foto/Vídeo</button><input type="file" id="up-btn" hidden='hidden' accept="image/*,.png,.jpg"></div>
+        <button id="submit">Publicar</button>
+        <div id="previewBox">
+            <img id="img-preview" src="" alt="" width="111px">
+        </div>
+        </div>
+        
+       
+      
+        <div id="posts"></div>
+        
+        <div id='modal'>
+            <p class='close'>X</p>
+            <img class='modalImage imgpost' src="">
+            <div class='modalTitle'><h4>this is a modal</h4></div>
+            </div>
+        <!--    <div class="commentBox">
+            <input type="text" placeholder="write your comment here">
+        </div>-->
+     
+       </div>
+
+
+   
+</section>
+
+
+
+
+
+</body>
+<script src="/assets/js/home.js"></script>
+<script src="/assets/js/mobile.js"></script>
+<script src="js/toWord.js"></script>
+<!--sidenav.js-->
+<script src="/assets/js/sidenav.js"></script>
+
+</html>
